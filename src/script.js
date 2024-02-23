@@ -4,7 +4,7 @@ function generatePoem(event) {
   new Typewriter("#poem", {
     strings: "The rose is blue in winter",
     autoStart: true,
-    delay: 30,
+    delay: 15,
     cursor: "",
   });
 }
