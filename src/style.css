@@ -1,6 +1,7 @@
 body {
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/116/389/original/wallpapersden.com_dreamy-night_1336x768.jpg?1708705928");
   font-family: "Pacifico", cursive;
+  background-attachment: fixed;
 }
 h1 {
   color: rgba(233, 102, 248, 0.9);
