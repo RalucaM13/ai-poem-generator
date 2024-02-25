@@ -23,18 +23,21 @@
         </h1>
       </header>
       <main>
-        <form id="poem-generator-form">
-          <input
-            type="text"
-            placeholder="Choose a topic for your poem"
-            autofocus
-            required
-            autocomplete="off"
-            class="prompt"
-            id="user-instructions" />
-          <input type="submit" class="submit-button" />
-        </form>
-        <div class="poem" id="poem"></div>
+        <div class="form-container">
+          <form id="poem-generator-form">
+            <input
+              type="text"
+              placeholder="Choose a topic for your poem"
+              autofocus
+              required
+              autocomplete="off"
+              class="prompt"
+              id="user-instructions" />
+            <input type="submit" class="submit-button" />
+          </form>
+          <div class="hint">i.e. flower, Venice, moon</div>
+        </div>
+        <div class="poem hidden" id="poem"></div>
       </main>
 
       <footer>

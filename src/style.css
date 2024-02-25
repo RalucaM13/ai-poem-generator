@@ -5,10 +5,6 @@ body {
   background-size: cover;
 }
 
-.container {
-  margin: 40px auto;
-  max-width: 600px;
-}
 header {
   margin-bottom: 30px;
 }
@@ -20,12 +16,7 @@ h1 {
 }
 
 form {
-  padding: 20px;
-  background-color: rgba(107, 44, 107, 0.2);
-  border-radius: 20px;
   display: flex;
-  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
-  margin-bottom: 30px;
 }
 
 footer {
@@ -35,6 +26,10 @@ footer {
   padding: 300px 30px;
   width: 100%;
   margin-top: 100px;
+}
+.container {
+  margin: 40px auto;
+  max-width: 600px;
 }
 .prompt {
   padding: 10px;
@@ -50,7 +45,7 @@ footer {
 .submit-button {
   margin-left: 12px;
   border-radius: 50px;
-  color: rgb(57, 186, 255);
+  color: rgb(75, 190, 252);
   background-color: rgb(47, 1, 47);
   font-weight: 700;
   border: none;
@@ -58,6 +53,21 @@ footer {
   font-size: 15px;
 }
 
+.form-container {
+  padding: 15px 20px;
+  background-color: rgba(107, 44, 107, 0.2);
+  border-radius: 20px;
+  box-shadow: 0px 20px 60px rgba(65, 50, 100, 0.08);
+  margin-bottom: 30px;
+}
+.hint {
+  line-height: 1.5;
+  font-size: 13px;
+  margin-top: 12px;
+  margin-left: 20px;
+  opacity: 0.7;
+  color: rgb(243, 211, 236);
+}
 .class {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
@@ -73,7 +83,24 @@ footer {
   box-shadow: 0px 4px 30px rgba(39, 33, 66, 0.03);
   border-radius: 5px;
 }
+.hidden {
+  display: none;
+}
 
 a {
   color: blue;
+}
+.generating {
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
