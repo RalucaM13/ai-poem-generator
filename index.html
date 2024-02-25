@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
       rel="stylesheet" />
     <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <title>AI Poem Generator</title>
   </head>
   <body>
@@ -29,7 +30,8 @@
             autofocus
             required
             autocomplete="off"
-            class="prompt" />
+            class="prompt"
+            id="user-instructions" />
           <input type="submit" class="submit-button" />
         </form>
         <div class="poem" id="poem"></div>
